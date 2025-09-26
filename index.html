@@ -1,1 +1,133 @@
-<!DOCTYPE html><html><head><title>Colorful Webpage</title><style>body { background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ffff00); }</style></head><body><h1>Colorful Webpage</h1><p>This is a sample page with vibrant colors!</p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Webpage - Enhanced Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ffff00);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Colorful Webpage</h1>
+            <p class="subtitle">An enhanced example of a vibrant web page</p>
+        </header>
+        
+        <div class="content">
+            <div class="card">
+                <h2>About This Page</h2>
+                <p>This is an enhanced example of a colorful webpage. It demonstrates modern web design principles with responsive layout, animations, and interactive elements.</p>
+            </div>
+            
+            <div class="card">
+                <h2>Features</h2>
+                <p>• Responsive design that works on all devices
+                • Animated gradient background
+                • Interactive cards with hover effects
+                • Clean, modern typography
+                • Semantic HTML structure</p>
+            </div>
+            
+            <div class="card">
+                <h2>Getting Started</h2>
+                <p>To use this template, simply modify the content and styling to match your needs. The page is built with pure HTML and CSS - no external dependencies required.</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Colorful Webpage Example. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
