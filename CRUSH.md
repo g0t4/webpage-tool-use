@@ -14,12 +14,7 @@
 
 ## Guidelines
 
-- All code should be in a single HTML file
 - Use semantic HTML elements
-- Keep styles in `<style>` tag
-- Inline JavaScript in `<script>` tag
-- No external dependencies
 - Responsive design using CSS Grid/Flexbox
-- Accessible color contrast
 - Mobile-first approach
 - Keep code readable and maintainable
